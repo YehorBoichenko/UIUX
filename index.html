@@ -27,6 +27,9 @@
 
   <body>
     <!--========== SIDEBAR ==========-->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="uil uil-bars"></i>
+    </div>
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav__logo">
@@ -58,6 +61,10 @@
         </div>
         <div class="btn__share">
           <i class="uil uil-share-alt social__share"></i>
+        </div>
+
+        <div class="nav__close" id="nav-close">
+          <i class="uil uil-times"></i>
         </div>
       </nav>
     </aside>
@@ -748,11 +755,80 @@
               </div>
             </div>
           </div>
-          <div class="comtact__content"></div>
+          <div class="contact__content">
+            <form action="" class="contact__form">
+              <div class="input__container">
+                <input type="text" class="input">
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input__container">
+                <input type="email" class="input">
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input__container">
+                <input type="tel" class="input">
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input__container textarea">
+                <textarea name="" id=""  class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <button type="submit" class="button"><i class="uil uil-navigator button__icon"></i>
+              Send Message
+            </button>
+            </form>
+          </div>
         </div>
       </section>
-      <!--===== FOOTER =====-->
     </main>
+      <!--===== FOOTER =====-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h2 class="footer__title">Vladimir</h1>
+            <span class="footer__subtitle">UI/UX Designer</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link"></a>
+            </li>
+            <li>
+              <a href="#work" class="footer__link"></a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link"></a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer__social"
+            ><i class="uil uil-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social"
+            ><i class="uil uil-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/vladimir-ventsel-438299142/"
+            target="_blank"
+            class="footer__social"
+            ><i class="uil uil-linkedin"></i
+          ></a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; Vladimir Ventsel. All rights reserved</p>
+      </div>
+    </footer>
+
 
     <!--========== SCROLL UP ==========-->
 
