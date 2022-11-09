@@ -151,3 +151,26 @@ sections.forEach(current =>{  const sectionHeight = current.offsetHeight;
 })
 }
 /*=============== SHOW SCROLL UP ===============*/
+
+
+/*=============== Telegram bot =================*/
+const TOKEN = '5670129174:AAEfoYwaF-bKec_DB62Ot4cmfkImxOqWg20';
+const ID = '-862242030';
+
+const form = document.querySelector('.contact__form')
+
+form .onSubmit = (event) =>{
+  event.preventDefault()
+  const data ={
+    'Username': form.uesrname.value,
+    'Email': form.email.value,
+    'Message': form.message.value,
+
+  }
+  const entries = Object.entries(data);
+  const values = entries.map(value => `<b>${value[0]}</b>: ${value[1]}`);
+  const message = values.join('%0A');
+
+  fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${ID}&parse_mode=html&text=${message}`)
+  form.reset();
+}
