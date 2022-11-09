@@ -211,6 +211,7 @@ input{
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
 }
 
 .nav__close{
@@ -666,6 +667,7 @@ input{
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0.1rem;
     z-index: var(--z-modal);
     opacity: 0;
@@ -862,7 +864,7 @@ text-align: center;
 }
 /*===== Testimonial Section =====*/
 @media screen and (min-width:992px){
-    .testimonials__container{
+    .testimonial__container{
         width:750px;
         margin-left: auto;
         margin-right: auto;
@@ -1088,12 +1090,13 @@ textarea.input{
     }
 
     .footer__container{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 1.6rem;
     }
 
     .footer__bg{
         background-color: var(--box-color);
+        padding: 3rem 0 3.5rem;
     }
     .footer__title{
         font-size: var(--h1-font-size);
@@ -1509,7 +1512,7 @@ textarea.input{
     }
 
     .services__container{
-        grid-template-columns: max-content;
+        grid-template-columns: 1fr;
     }
 
     .services__content{
