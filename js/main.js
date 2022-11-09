@@ -162,10 +162,10 @@ const form = document.querySelector('.contact__form')
 form.onsubmit = (event) =>{
   event.preventDefault()
   const data = {
-    'Username': form.uesrname.value,
+    'Username': form.name.value,
     'Email': form.email.value,
     'Phone': form.phone.value,
-    'Message': form.message.value,
+    'Message': form.comment.value,
 
   }
   const entries = Object.entries(data);
