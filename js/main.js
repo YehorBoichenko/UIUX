@@ -159,11 +159,12 @@ const ID = '-862242030';
 
 const form = document.querySelector('.contact__form')
 
-form .onSubmit = (event) =>{
+form .onsubmit = (event) =>{
   event.preventDefault()
-  const data ={
+  const data = {
     'Username': form.uesrname.value,
     'Email': form.email.value,
+    'Phone': form.phone.value,
     'Message': form.message.value,
 
   }
